@@ -1,0 +1,79 @@
+.nav {
+  background: #ef7d29;
+}
+
+#navbar ul,
+#navbar li,
+#navbar a {
+  margin: 0px 0px 0px 21px;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+/* navbar */
+#navbar {
+  border: 3px solid black;
+  border-radius: 10px;
+  font: 18px "opensans-bold", sans-serif;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin: 0 auto;
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.opaque {
+  background-color: #333;
+}
+
+ul#nav {
+  min-height: 48px;
+  width: auto;
+
+  /* center align the menu */
+  text-align: center;
+}
+ul#nav li {
+  position: relative;
+  list-style: none;
+  height: 48px;
+  display: inline-block;
+}
+
+/* Links */
+ul#nav li a {
+  /* 8px padding top + 8px padding bottom + 32px line-height = 48px */
+
+  display: inline-block;
+  padding: 11px 13px;
+  line-height: 32px;
+  text-decoration: none;
+  text-align: left;
+  color: black;
+
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+ul#nav li a:active {
+  background-color: transparent !important;
+}
+ul#nav li.current a {
+  color: #f06000;
+}
+
+.nav .nav-content {
+  max-width: 1200px;
+  padding: 0rem 3rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
